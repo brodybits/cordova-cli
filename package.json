@@ -32,7 +32,7 @@
   "dependencies": {
     "configstore": "2.1.0",
     "cordova-common": "2.0.3",
-    "cordova-lib": "7.0.1",
+    "cordova-lib": "file:///C:\\Users\\Chris\\Documents\\chris-work\\CB-12397-test\\cordova-lib\\cordova-lib",
     "editor": "1.0.0",
     "insight": "0.8.2",
     "nopt": "3.0.1",
