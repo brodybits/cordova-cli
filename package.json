@@ -1,6 +1,6 @@
 {
   "name": "cordova",
-  "version": "7.0.2-dev",
+  "version": "7.0.2-cb-12397-devtest1",
   "preferGlobal": true,
   "description": "Cordova command line interface tool",
   "main": "cordova",
@@ -32,7 +32,7 @@
   "dependencies": {
     "configstore": "2.1.0",
     "cordova-common": "2.0.3",
-    "cordova-lib": "7.0.1",
+    "cordova-lib": "file:///C:\\Users\\Chris\\Documents\\chris-work\\cb-12397-dev\\cordova-lib\\cordova-lib",
     "editor": "1.0.0",
     "insight": "0.8.2",
     "nopt": "3.0.1",
