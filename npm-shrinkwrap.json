@@ -348,6 +348,14 @@
         }
       }
     },
+    "bplist-creator": {
+      "version": "0.0.7",
+      "resolved": "https://registry.npmjs.org/bplist-creator/-/bplist-creator-0.0.7.tgz",
+      "integrity": "sha1-N98VNgkoJLh8QvlXsBNEEXNyrkU=",
+      "requires": {
+        "stream-buffers": "~2.2.0"
+      }
+    },
     "bplist-parser": {
       "version": "0.1.1",
       "resolved": "https://registry.npmjs.org/bplist-parser/-/bplist-parser-0.1.1.tgz",
@@ -947,9 +955,8 @@
       }
     },
     "cordova-lib": {
-      "version": "8.1.0",
-      "resolved": "https://registry.npmjs.org/cordova-lib/-/cordova-lib-8.1.0.tgz",
-      "integrity": "sha512-VLLRhEaqi5bD1AxAndlPGiRD5ZX2EwUnxGxIvEUUbgZxwOceGWHM2wdI4V2nJOieJ0N8CbDRsLsOwFJQsRLOyQ==",
+      "version": "git+https://github.com/brodybits/cordova-lib.git#f27946d08c3c454d87a3a1ad06a9d99f8a367f1e",
+      "from": "git+https://github.com/brodybits/cordova-lib.git#bug-706-xcode-hotfix-test",
       "requires": {
         "aliasify": "^2.1.0",
         "cordova-common": "^2.2.0",
@@ -973,7 +980,8 @@
         "shelljs": "0.3.0",
         "tar": "^4.4.1",
         "underscore": "^1.9.0",
-        "which": "^1.3.1"
+        "which": "^1.3.1",
+        "xcode": "^1.0.0"
       },
       "dependencies": {
         "base64-js": {
@@ -1718,7 +1726,7 @@
     },
     "events": {
       "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/events/-/events-1.1.1.tgz",
+      "resolved": "http://registry.npmjs.org/events/-/events-1.1.1.tgz",
       "integrity": "sha1-nr23Y1rQmccNzEwqH1AEKI6L2SQ="
     },
     "evp_bytestokey": {
@@ -1862,7 +1870,7 @@
     },
     "finalhandler": {
       "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/finalhandler/-/finalhandler-1.1.1.tgz",
+      "resolved": "http://registry.npmjs.org/finalhandler/-/finalhandler-1.1.1.tgz",
       "integrity": "sha512-Y1GUDo39ez4aHAw7MysnUD5JzYX+WaIj8I57kO3aEPT1fFRL4sr7mjei97FgnwhAyyzRYmQZaTHb2+9uZ1dPtg==",
       "requires": {
         "debug": "2.6.9",
@@ -3447,9 +3455,9 @@
       }
     },
     "pbkdf2": {
-      "version": "3.0.16",
-      "resolved": "https://registry.npmjs.org/pbkdf2/-/pbkdf2-3.0.16.tgz",
-      "integrity": "sha512-y4CXP3thSxqf7c0qmOF+9UeOTrifiVTIM+u7NWlq+PRsHbr7r7dpCmvzrZxa96JJUNi0Y5w9VqG5ZNeCVMoDcA==",
+      "version": "3.0.17",
+      "resolved": "https://registry.npmjs.org/pbkdf2/-/pbkdf2-3.0.17.tgz",
+      "integrity": "sha512-U/il5MsrZp7mGg3mSQfn742na2T+1/vHDCG5/iTI3X9MKUuYUZVLQhyRsg06mCgDBTd57TxzgZt7P+fYfjRLtA==",
       "requires": {
         "create-hash": "^1.1.2",
         "create-hmac": "^1.1.4",
@@ -3457,6 +3465,11 @@
         "safe-buffer": "^5.0.1",
         "sha.js": "^2.4.8"
       }
+    },
+    "pegjs": {
+      "version": "0.10.0",
+      "resolved": "http://registry.npmjs.org/pegjs/-/pegjs-0.10.0.tgz",
+      "integrity": "sha1-z4uvrm7d/0tafvsYUmnqr0YQ3b0="
     },
     "performance-now": {
       "version": "2.1.0",
@@ -4099,6 +4112,33 @@
       "resolved": "https://registry.npmjs.org/simple-concat/-/simple-concat-1.0.0.tgz",
       "integrity": "sha1-c0TLuLbib7J9ZrL8hvn21Zl1IcY="
     },
+    "simple-plist": {
+      "version": "0.2.1",
+      "resolved": "https://registry.npmjs.org/simple-plist/-/simple-plist-0.2.1.tgz",
+      "integrity": "sha1-cXZts1IyaSjPOoByQrp2IyJjZyM=",
+      "requires": {
+        "bplist-creator": "0.0.7",
+        "bplist-parser": "0.1.1",
+        "plist": "2.0.1"
+      },
+      "dependencies": {
+        "base64-js": {
+          "version": "1.1.2",
+          "resolved": "https://registry.npmjs.org/base64-js/-/base64-js-1.1.2.tgz",
+          "integrity": "sha1-1kAMrBxMZgl22Q0HoENR2JOV9eg="
+        },
+        "plist": {
+          "version": "2.0.1",
+          "resolved": "https://registry.npmjs.org/plist/-/plist-2.0.1.tgz",
+          "integrity": "sha1-CjLKlIGxw2TpLhjcVch23p0B2os=",
+          "requires": {
+            "base64-js": "1.1.2",
+            "xmlbuilder": "8.2.2",
+            "xmldom": "0.1.x"
+          }
+        }
+      }
+    },
     "slash": {
       "version": "1.0.0",
       "resolved": "https://registry.npmjs.org/slash/-/slash-1.0.0.tgz",
@@ -4186,6 +4226,11 @@
         "inherits": "~2.0.1",
         "readable-stream": "^2.0.2"
       }
+    },
+    "stream-buffers": {
+      "version": "2.2.0",
+      "resolved": "https://registry.npmjs.org/stream-buffers/-/stream-buffers-2.2.0.tgz",
+      "integrity": "sha1-kdX1Ew0c75bc+n9yaUUYh0HQnuQ="
     },
     "stream-combiner2": {
       "version": "1.1.1",
@@ -4717,6 +4762,23 @@
         "graceful-fs": "^4.1.11",
         "imurmurhash": "^0.1.4",
         "signal-exit": "^3.0.2"
+      }
+    },
+    "xcode": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/xcode/-/xcode-1.0.0.tgz",
+      "integrity": "sha1-4fWxRDJF3tOMGAeW3xoQ/e2ghOw=",
+      "requires": {
+        "pegjs": "^0.10.0",
+        "simple-plist": "^0.2.1",
+        "uuid": "3.0.1"
+      },
+      "dependencies": {
+        "uuid": {
+          "version": "3.0.1",
+          "resolved": "https://registry.npmjs.org/uuid/-/uuid-3.0.1.tgz",
+          "integrity": "sha1-ZUS7ot/ajBzxfmKaOjBeK7H+5sE="
+        }
       }
     },
     "xdg-basedir": {
